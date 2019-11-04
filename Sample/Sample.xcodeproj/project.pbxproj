@@ -14,7 +14,6 @@
 		C05CD70F236FC3C4008BC0D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C05CD70D236FC3C4008BC0D7 /* LaunchScreen.storyboard */; };
 		C05CD712236FC3C4008BC0D7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C05CD711236FC3C4008BC0D7 /* main.m */; };
 		C05CD71C236FC3C4008BC0D7 /* SampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C05CD71B236FC3C4008BC0D7 /* SampleTests.m */; };
-		C05CD727236FC3C4008BC0D7 /* SampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C05CD726236FC3C4008BC0D7 /* SampleUITests.m */; };
 		C05CD735236FC64D008BC0D7 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = C05CD734236FC64D008BC0D7 /* .travis.yml */; };
 /* End PBXBuildFile section */
 
@@ -50,8 +49,6 @@
 		C05CD71B236FC3C4008BC0D7 /* SampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleTests.m; sourceTree = "<group>"; };
 		C05CD71D236FC3C4008BC0D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C05CD722236FC3C4008BC0D7 /* SampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C05CD726236FC3C4008BC0D7 /* SampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleUITests.m; sourceTree = "<group>"; };
-		C05CD728236FC3C4008BC0D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C05CD734236FC64D008BC0D7 /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; name = .travis.yml; path = ../.travis.yml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,7 +83,6 @@
 				C05CD734236FC64D008BC0D7 /* .travis.yml */,
 				C05CD6FE236FC3C0008BC0D7 /* Sample */,
 				C05CD71A236FC3C4008BC0D7 /* SampleTests */,
-				C05CD725236FC3C4008BC0D7 /* SampleUITests */,
 				C05CD6FD236FC3C0008BC0D7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -124,15 +120,6 @@
 				C05CD71D236FC3C4008BC0D7 /* Info.plist */,
 			);
 			path = SampleTests;
-			sourceTree = "<group>";
-		};
-		C05CD725236FC3C4008BC0D7 /* SampleUITests */ = {
-			isa = PBXGroup;
-			children = (
-				C05CD726236FC3C4008BC0D7 /* SampleUITests.m */,
-				C05CD728236FC3C4008BC0D7 /* Info.plist */,
-			);
-			path = SampleUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,7 +271,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C05CD727236FC3C4008BC0D7 /* SampleUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
