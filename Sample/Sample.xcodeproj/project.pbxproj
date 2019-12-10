@@ -18,6 +18,8 @@
 		C07D9B4E2387985E00B81956 /* FontStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = C07D9B4D2387985E00B81956 /* FontStyle.m */; };
 		C07D9B51238799EB00B81956 /* StyleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = C07D9B50238799EB00B81956 /* StyleLabel.m */; };
 		C0C1E3C62394CC6A00762D77 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C1E3C42394CC6A00762D77 /* SceneDelegate.m */; };
+		C0C5A291239A160D00A3A915 /* WebViewTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C5A28F239A160D00A3A915 /* WebViewTableViewCell.m */; };
+		C0C5A292239A160D00A3A915 /* WebViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0C5A290239A160D00A3A915 /* WebViewTableViewCell.xib */; };
 		C0DFE5C0237150FC00E39D8A /* number.txt in Resources */ = {isa = PBXBuildFile; fileRef = C0DFE5BF237150FC00E39D8A /* number.txt */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +55,9 @@
 		C0C1E3C42394CC6A00762D77 /* SceneDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		C0C1E3C52394CC6A00762D77 /* SceneDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		C0C1E3C72395094700762D77 /* Sample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Sample.entitlements; sourceTree = "<group>"; };
+		C0C5A28E239A160D00A3A915 /* WebViewTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebViewTableViewCell.h; sourceTree = "<group>"; };
+		C0C5A28F239A160D00A3A915 /* WebViewTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewTableViewCell.m; sourceTree = "<group>"; };
+		C0C5A290239A160D00A3A915 /* WebViewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WebViewTableViewCell.xib; sourceTree = "<group>"; };
 		C0DFE5BF237150FC00E39D8A /* number.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = number.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,6 +108,9 @@
 				C0C1E3C42394CC6A00762D77 /* SceneDelegate.m */,
 				C05CD705236FC3C0008BC0D7 /* ViewController.h */,
 				C05CD706236FC3C0008BC0D7 /* ViewController.m */,
+				C0C5A28E239A160D00A3A915 /* WebViewTableViewCell.h */,
+				C0C5A28F239A160D00A3A915 /* WebViewTableViewCell.m */,
+				C0C5A290239A160D00A3A915 /* WebViewTableViewCell.xib */,
 				C07D9B4C2387985E00B81956 /* FontStyle.h */,
 				C07D9B4D2387985E00B81956 /* FontStyle.m */,
 				C07D9B4F238799EB00B81956 /* StyleLabel.h */,
@@ -207,6 +215,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C05CD70F236FC3C4008BC0D7 /* LaunchScreen.storyboard in Resources */,
+				C0C5A292239A160D00A3A915 /* WebViewTableViewCell.xib in Resources */,
 				C05CD70C236FC3C4008BC0D7 /* Assets.xcassets in Resources */,
 				C05CD735236FC64D008BC0D7 /* .travis.yml in Resources */,
 				C0DFE5C0237150FC00E39D8A /* number.txt in Resources */,
@@ -229,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C05CD707236FC3C0008BC0D7 /* ViewController.m in Sources */,
+				C0C5A291239A160D00A3A915 /* WebViewTableViewCell.m in Sources */,
 				C0C1E3C62394CC6A00762D77 /* SceneDelegate.m in Sources */,
 				C05CD701236FC3C0008BC0D7 /* AppDelegate.m in Sources */,
 				C07D9B4E2387985E00B81956 /* FontStyle.m in Sources */,

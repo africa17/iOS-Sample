@@ -7,6 +7,9 @@
 //
 
 #import "ViewController.h"
+#import "WebViewTableViewCell.h"
+
+//#define STATIC_CELL
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -15,6 +18,7 @@
 
 @implementation ViewController {
     long _count;
+    NSMutableArray *_cells;
     NSOperationQueue *_queue;
 }
 
@@ -22,7 +26,18 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    _count = 3;
+    _count = 7;
+    
+#ifdef STATIC_CELL
+    _cells = [NSMutableArray array];
+    for (long i = 0; i < _count; i++) {
+        NSArray *subviewArray = [[NSBundle mainBundle] loadNibNamed:@"WebViewTableViewCell" owner:self options:nil];
+        WebViewTableViewCell *cell = subviewArray[0];
+        [cell.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://www.daum.net"]]];
+        cell.webView.scrollView.scrollEnabled = false;
+        [_cells addObject:cell];
+    }
+#endif
     
     //_queue = [[NSOperationQueue alloc] init];
     _queue = [NSOperationQueue mainQueue];
@@ -30,7 +45,7 @@
     NSThread *thread = [[NSThread alloc] initWithTarget:self selector:@selector(run) object:nil];
 
     // Execute
-    [thread start];
+    //[thread start];
     
     /*thread = [[NSThread alloc] initWithTarget:self selector:@selector(run2) object:nil];
 
@@ -107,20 +122,35 @@
 
 - (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return 0.0;
-}
+}*/
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 0.0;
+    return 100.0;
 }
 
-- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+/*- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
     return nil;
 }*/
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
-    UIWebView *webView = [cell viewWithTag:1000];
-    [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://www.daum.net"]]];
+    UITableViewCell *cell = nil;
+#ifdef STATIC_CELL
+    cell = _cells[indexPath.row];
+#else
+    if (indexPath.row == 5) {
+        NSArray *subviewArray = [[NSBundle mainBundle] loadNibNamed:@"WebViewTableViewCell" owner:self options:nil];
+        cell = subviewArray[0];
+        [((WebViewTableViewCell*)cell).webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://www.daum.net"]]];
+        ((WebViewTableViewCell*)cell).webView.scrollView.scrollEnabled = false;
+        cell = [[UITableViewCell alloc] init];
+    } else {
+        WebViewTableViewCell *webViewCell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+        cell = webViewCell;
+        [webViewCell.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://www.daum.net"]]];
+        webViewCell.webView.scrollView.scrollEnabled = false;
+    }
+#endif
+    
     return cell;
 }
 
@@ -135,10 +165,12 @@
 }*/
 
 - (IBAction)more:(id)sender {
+    return;
+    
     [_queue cancelAllOperations];
 
     [_queue addOperationWithBlock:^{
-        self->_count = 3;
+        self->_count += 5;
         [self.tableView reloadData];
 
         NSLog(@"+++++++++++++++++++++++++++++%@", [NSThread currentThread]);
