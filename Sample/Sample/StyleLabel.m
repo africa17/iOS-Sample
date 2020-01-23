@@ -22,5 +22,5 @@
 - (void)setStyle:(NSString *)style {
     self.font = [FontStyle fontForStyle:style];
 }
-
+ 
 @end
