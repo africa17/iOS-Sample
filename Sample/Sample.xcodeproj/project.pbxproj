@@ -17,6 +17,7 @@
 		C05CD735236FC64D008BC0D7 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = C05CD734236FC64D008BC0D7 /* .travis.yml */; };
 		C07D9B4E2387985E00B81956 /* FontStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = C07D9B4D2387985E00B81956 /* FontStyle.m */; };
 		C07D9B51238799EB00B81956 /* StyleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = C07D9B50238799EB00B81956 /* StyleLabel.m */; };
+		C08CEDF423D93738009D95A3 /* a.m in Sources */ = {isa = PBXBuildFile; fileRef = C08CEDF323D93738009D95A3 /* a.m */; };
 		C0C1E3C62394CC6A00762D77 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C1E3C42394CC6A00762D77 /* SceneDelegate.m */; };
 		C0C5A291239A160D00A3A915 /* WebViewTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C5A28F239A160D00A3A915 /* WebViewTableViewCell.m */; };
 		C0C5A292239A160D00A3A915 /* WebViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0C5A290239A160D00A3A915 /* WebViewTableViewCell.xib */; };
@@ -52,6 +53,8 @@
 		C07D9B4D2387985E00B81956 /* FontStyle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FontStyle.m; sourceTree = "<group>"; };
 		C07D9B4F238799EB00B81956 /* StyleLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StyleLabel.h; sourceTree = "<group>"; };
 		C07D9B50238799EB00B81956 /* StyleLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StyleLabel.m; sourceTree = "<group>"; };
+		C08CEDF223D93738009D95A3 /* a.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = a.h; sourceTree = "<group>"; };
+		C08CEDF323D93738009D95A3 /* a.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = a.m; sourceTree = "<group>"; };
 		C0C1E3C42394CC6A00762D77 /* SceneDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		C0C1E3C52394CC6A00762D77 /* SceneDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		C0C1E3C72395094700762D77 /* Sample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Sample.entitlements; sourceTree = "<group>"; };
@@ -115,6 +118,8 @@
 				C07D9B4D2387985E00B81956 /* FontStyle.m */,
 				C07D9B4F238799EB00B81956 /* StyleLabel.h */,
 				C07D9B50238799EB00B81956 /* StyleLabel.m */,
+				C08CEDF223D93738009D95A3 /* a.h */,
+				C08CEDF323D93738009D95A3 /* a.m */,
 				C05CD708236FC3C0008BC0D7 /* Main.storyboard */,
 				C05CD70B236FC3C4008BC0D7 /* Assets.xcassets */,
 				C05CD70D236FC3C4008BC0D7 /* LaunchScreen.storyboard */,
@@ -244,6 +249,7 @@
 				C07D9B4E2387985E00B81956 /* FontStyle.m in Sources */,
 				C05CD712236FC3C4008BC0D7 /* main.m in Sources */,
 				C07D9B51238799EB00B81956 /* StyleLabel.m in Sources */,
+				C08CEDF423D93738009D95A3 /* a.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
