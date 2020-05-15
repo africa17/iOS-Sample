@@ -15,7 +15,6 @@
 		C05CD712236FC3C4008BC0D7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C05CD711236FC3C4008BC0D7 /* main.m */; };
 		C05CD71C236FC3C4008BC0D7 /* SampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C05CD71B236FC3C4008BC0D7 /* SampleTests.m */; };
 		C05CD735236FC64D008BC0D7 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = C05CD734236FC64D008BC0D7 /* .travis.yml */; };
-		C083414A246E5F2800DE7489 /* alphabet in Resources */ = {isa = PBXBuildFile; fileRef = C0834149246E5F2800DE7489 /* alphabet */; };
 		C0DFE5C0237150FC00E39D8A /* number.txt in Resources */ = {isa = PBXBuildFile; fileRef = C0DFE5BF237150FC00E39D8A /* number.txt */; };
 /* End PBXBuildFile section */
 
@@ -44,7 +43,6 @@
 		C05CD71B236FC3C4008BC0D7 /* SampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleTests.m; sourceTree = "<group>"; };
 		C05CD71D236FC3C4008BC0D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C05CD734236FC64D008BC0D7 /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; name = .travis.yml; path = ../.travis.yml; sourceTree = "<group>"; };
-		C0834149246E5F2800DE7489 /* alphabet */ = {isa = PBXFileReference; lastKnownFileType = text; path = alphabet; sourceTree = "<group>"; };
 		C0DFE5BF237150FC00E39D8A /* number.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = number.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -98,7 +96,6 @@
 				C05CD710236FC3C4008BC0D7 /* Info.plist */,
 				C05CD711236FC3C4008BC0D7 /* main.m */,
 				C0DFE5BF237150FC00E39D8A /* number.txt */,
-				C0834149246E5F2800DE7489 /* alphabet */,
 			);
 			path = Sample;
 			sourceTree = "<group>";
@@ -195,7 +192,6 @@
 				C05CD70F236FC3C4008BC0D7 /* LaunchScreen.storyboard in Resources */,
 				C05CD70C236FC3C4008BC0D7 /* Assets.xcassets in Resources */,
 				C05CD735236FC64D008BC0D7 /* .travis.yml in Resources */,
-				C083414A246E5F2800DE7489 /* alphabet in Resources */,
 				C0DFE5C0237150FC00E39D8A /* number.txt in Resources */,
 				C05CD70A236FC3C0008BC0D7 /* Main.storyboard in Resources */,
 			);
